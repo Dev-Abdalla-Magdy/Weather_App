@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+}
+.app {
+  height: 100vh;
+  text-align: center;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .title {
+  padding: 20px;
+}
+.app .title h1 {
+  font-size: 32px;
+}
+.app .search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+.app .search input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  flex: 1;
+  font-size: 18px;
+}
+.app .search span {
+  background-color: #fff;
+  color: #777;
+  width: 41px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.app .weather {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+}
+.app .weather .temp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.app .temp img {
+  max-width: 150px;
+}
+.app .temp h1 {
+  font-size: 80px;
+}
+.app .weather .details {
+  display: flex;
+  justify-content: space-between;
+}
+.app .details .humidity,
+.app .wind {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app .humidity img,
+.app .wind img {
+  max-width: 60px;
+  margin-right: 10px;
+}
+.app .info {
+  font-weight: bold;
+}
+.app .humidity .percentage,
+.app .wind .speed {
+  font-size: 24px;
+}
+.app .humidity .humidity-info,
+.app .wind .wind-speed {
+  font-weight: normal;
+}
+@media (min-width: 768px) {
+  .app {
+    margin: 0 20px;
+  }
+  .app .weather {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+  }
+  .app .weather .details {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .app .search {
+    padding: 0 60px;
+  }
+  .app .temp h2 {
+    font-size: 40px;
+  }
+}
